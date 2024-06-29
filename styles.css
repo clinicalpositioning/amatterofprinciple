@@ -2,99 +2,82 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f5f5f5;
-  height: 100%;
-  overflow: hidden;
-}
-
-#section-1-11 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #f3f4f6;
   min-height: 100vh;
-  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.ct-section-inner-wrap {
-  max-width: 800px;
+.container {
   width: 100%;
-  background-color: #fff;
-  border: 2px solid #303030;
-  padding: 40px;
-  text-align: center;
+  max-width: 28rem;
+  padding: 1rem;
   box-sizing: border-box;
 }
 
-.ct-image {
-  border-radius: 25px;
+.content {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding: 1.5rem;
 }
 
-#div_block-10-11 {
-  margin-bottom: 20px;
-}
-
-#headline-4-11 {
-  font-size: 36px;
+h1 {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #2d2d2d;
+  color: #1f2937;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.image-container {
+  margin-bottom: 1.5rem;
+}
+
+img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+blockquote {
   margin: 0;
+  text-align: center;
 }
 
-#div_block-11-11 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+blockquote p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #4b5563;
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
-#div_block-21-11 {
-  margin-bottom: 20px;
+blockquote footer {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: right;
 }
 
-#text_block-12-11 {
-  font-size: 24px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-#span-27-11 {
-  font-size: 18px;
-  display: block;
-  margin-top: 10px;
-}
-
-#image-6-11 {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 767px) {
-  #headline-4-11 {
-    font-size: 24px;
+@media (min-width: 640px) {
+  .container {
+      padding: 1.5rem;
   }
 
-  #text_block-12-11 {
-    font-size: 18px;
+  .content {
+      padding: 2rem;
   }
 
-  #span-27-11 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  #headline-4-11 {
-    font-size: 20px;
+  h1 {
+      font-size: 1.875rem;
   }
 
-  #text_block-12-11 {
-    font-size: 16px;
-    margin-right: 0;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  #span-27-11 {
-    font-size: 12px;
+  blockquote p {
+      font-size: 1.25rem;
   }
 }
